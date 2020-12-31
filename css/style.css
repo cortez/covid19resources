@@ -1,13 +1,10 @@
 @charset "UTF-8";
 @import url("https://use.typekit.net/jjx7czz.css");
 
-html {
-    background: url('img/bg.png') no-repeat center center fixed;
-}
-
 body {
     padding-top: 5%;
     font-family: 'Stolzl';
+    background: url('img/bg.png') no-repeat center center fixed;
 /*     background: #fcf0f1; */
 }
 
@@ -15,9 +12,12 @@ body {
     position: fixed;
     left: 20px;
     top: 20px;
-    font-size: 1.2em;
     color: #38040E;
     font-weight: 500;
+}
+
+.head {
+    font-size: 1.2em;
 }
 
 .foot, .foottext {
