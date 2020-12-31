@@ -18,7 +18,7 @@ body {
 }
 
 .foot, .foottext {
-    color: #800E13;
+    color: #fad2d6;
 }
 
 .link:hover, .foot:hover {
@@ -32,7 +32,7 @@ h2 {
 
 h3 {
     font-weight: 300;
-    color: #AD2831;
+    color: #fad2d6;
 }
 
 p {
@@ -65,7 +65,7 @@ a {
 
 .total_case_box p {
     font-size: 2.5em;
-    color: #800E13;
+    color: #640D14;
 }
 
 .article {
@@ -103,12 +103,12 @@ a {
 
 .blob {
     transform: translate(23%, 3%) scale(0.65);
-    fill: #640D14;
+    fill: #fad2d6;
     transition: 0.4s;
 }
 
 .card.active .blob {
-    fill: #800E13;
+    fill: #fad2d6;
     transform: translate(23%, 3%) scale(3.75);
 }
 
