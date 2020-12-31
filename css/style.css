@@ -5,7 +5,6 @@ body {
     padding-top: 5%;
     font-family: 'Stolzl';
     background: #fcf0f1;
-/*     background: #AD2831; */
 }
 
 .links {
@@ -18,7 +17,7 @@ body {
 }
 
 .foot, .foottext {
-    color: #fad2d6;
+    color: #AD2831;
 }
 
 .link:hover, .foot:hover {
