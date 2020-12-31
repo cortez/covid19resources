@@ -2,10 +2,7 @@
 @import url("https://use.typekit.net/jjx7czz.css");
 
 html {
-    background-image: url("img/bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url('img/bg.png') no-repeat center center fixed;
 }
 
 body {
