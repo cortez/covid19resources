@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/jjx7czz.css");
+
+body {
+    padding-top: 5%;
+    font-family: 'Stolzl';
+    background: #AD2831;
+}
+
+.links {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    font-size: 1.2em;
+    color: #38040E;
+    font-weight: 500;
+}
+
+.foot, .foottext {
+    color: #800E13;
+}
+
+.link:hover, .foot:hover {
+    color: #000;
+}
+
+h2 {
+    font-weight: 500;
+    color: #38040E;
+}
+
+h3 {
+    font-weight: 300;
+    color: #AD2831;
+}
+
+p {
+    color: #800E13;
+}
+
+.visit {
+    color: #38040E;
+    font-weight: 500;
+}
+
+.subhead {
+    color: #640D14;
+}
+
+span {
+    color: #38040E;
+}
+
+a {
+    text-decoration: none;
+    color: #38040E;
+}
+
+.wrapper {
+    width: 60%;
+    position: absolute;
+    left: 20%;
+}
+
+.total_case_box p {
+    font-size: 2.5em;
+    color: #800E13;
+}
+
+.article {
+    padding-bottom: 10%;
+}
+
+
+/* cards */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.card {
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    width: 280px;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: left;
+}
+
+.svg-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 125%;
+    z-index: -1;
+}
+
+.blob {
+    transform: translate(23%, 3%) scale(0.65);
+    fill: #640D14;
+    transition: 0.4s;
+}
+
+.card.active .blob {
+    fill: #800E13;
+    transform: translate(23%, 3%) scale(3.75);
+}
+
+.card.active .bg-overlay {
+    opacity: 0;
+}
+
+.circular-border {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #38040E;
+    position: relative;
+}
+
+i {
+    font-style: normal;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h3 {
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.card.active h3 {
+    opacity: 1;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body,
+img {
+    -webkit-animation: fadeIn ease-in 0.5s;
+    -moz-animation: fadeIn ease-in 0.5s;
+    animation: fadeIn ease-in 0.5s;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+@media screen and (max-width:599px) {
+
+    .links {
+        position: absolute;
+    }
+
+    .total_case_box p {
+        font-size: 1.5em;
+        color: #800E13;
+    }
+
+    .wrapper {
+        padding-top: 20%;
+        width: 90%;
+        left: 5%;
+    }
+
+    .card.active {
+        width: 100%;
+    }
+
+    .resources {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}

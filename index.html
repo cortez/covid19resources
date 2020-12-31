@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>COVID-19 Resources</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="icon" sizes="32x32" href="img/favicon.svg" />
+</head>
+
+<div class="links">
+    <a href="https://covid19resources.co" class="link">COVID-19 Resources</a><br>
+    <a class="foottext">Developed by <a href="https://covid19resources.co" class="link foot">Joseph Cortez</a></a>
+</div>
+
+<body>
+    <div class="wrapper">
+        <div class="total_case_box">
+            <p>There has now been a total of <span id="totalCases"></span> COVID-19 cases worldwide. </p>
+            <p>So far, <span id="totalRecovered"></span> people have recovered at a rate of <span
+                    id="recoveryRate"></span><span>%</span>,
+                while <span id="totalDeaths"></span> have died at a rate of <span
+                    id="fatalityRate"></span><span>%</span>.</p>
+
+            <br>
+            <p class="subhead">Other Resources:</p>
+
+            <div class="resources">
+                <a href="https://www.covidvisualizer.com">
+                    <div class="card active">
+                        <svg class="svg-background" viewBox="0 0 600 600">
+                            <path class="blob"
+                                d="M192.1,-148.2C230,-105.8,228.6,-27,204.4,33.7C180.2,94.3,133.3,136.8,77.7,165C22.1,193.1,-42.1,206.9,-94.5,185.7C-146.9,164.5,-187.5,108.3,-201.7,46C-215.9,-16.2,-203.7,-84.5,-165.7,-127C-127.7,-169.5,-63.8,-186.3,6.6,-191.6C77.1,-196.9,154.3,-190.7,192.1,-148.2Z">
+                            </path>
+                        </svg>
+
+                        <div class="top-section">
+                            <div class="circular-border">
+                                <i><img src="https://img.icons8.com/ios-filled/50/AD2831/world.png" /></i>
+                            </div>
+                        </div>
+                        <h2>Covid Visualizer</h2>
+                        <h3>Interactive visualizer that highlights COVID-19 data.</h3>
+
+                        <h3><a class="visit">Visit →</a></h3>
+                    </div>
+                </a>
+
+                <a href="https://www.cdc.gov/library/researchguides/2019novelcoronavirus/websites.html">
+                    <div class="card">
+                        <svg class="svg-background" viewBox="0 0 600 600">
+                            <path class="blob"
+                                d="M192.1,-148.2C230,-105.8,228.6,-27,204.4,33.7C180.2,94.3,133.3,136.8,77.7,165C22.1,193.1,-42.1,206.9,-94.5,185.7C-146.9,164.5,-187.5,108.3,-201.7,46C-215.9,-16.2,-203.7,-84.5,-165.7,-127C-127.7,-169.5,-63.8,-186.3,6.6,-191.6C77.1,-196.9,154.3,-190.7,192.1,-148.2Z">
+                            </path>
+                        </svg>
+
+                        <div class="top-section">
+                            <div class="circular-border">
+                                <i><img
+                                        src="https://img.icons8.com/pastel-glyph/50/AD2831/protection-mask--v3.png" /></i>
+                            </div>
+                        </div>
+                        <h2>CDC Websites</h2>
+                        <h3>Official library of CDC.gov COVID-19 websites.</h3>
+
+                        <h3><a class="visit">Visit →</a></h3>
+                    </div>
+                </a>
+
+                <a href="https://www.worldometers.info/coronavirus">
+                    <div class="card">
+                        <svg class="svg-background" viewBox="0 0 600 600">
+                            <path class="blob"
+                                d="M192.1,-148.2C230,-105.8,228.6,-27,204.4,33.7C180.2,94.3,133.3,136.8,77.7,165C22.1,193.1,-42.1,206.9,-94.5,185.7C-146.9,164.5,-187.5,108.3,-201.7,46C-215.9,-16.2,-203.7,-84.5,-165.7,-127C-127.7,-169.5,-63.8,-186.3,6.6,-191.6C77.1,-196.9,154.3,-190.7,192.1,-148.2Z">
+                            </path>
+                        </svg>
+
+                        <div class="top-section">
+                            <div class="circular-border">
+                                <i><img src="https://img.icons8.com/ios-filled/50/AD2831/coronavirus.png" /></i>
+                            </div>
+                        </div>
+                        <h2>Worldometers</h2>
+                        <h3>Detailed and specific live COVID-19 updates from Worldometers.</h3>
+
+                        <h3><a class="visit">Visit →</a></h3>
+                    </div>
+                </a>
+            </div>
+
+            <br>
+            <p class="subhead">Live COVID-19 News:</p>
+
+        </div>
+
+        <div class="articles">
+            <a id="article" class="article"></a>
+        </div>
+    </div>
+
+    <script src='js/script.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+</body>
+
+</html>
