@@ -329,6 +329,7 @@ img {
 
     .total_cases {
         display: inline;
+        padding-bottom: 20%;
     }
 
     .other_stats {
