@@ -285,6 +285,15 @@ img {
 
 @media screen and (max-width:599px) {
 
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    p {
+        left: 0;
+    }
+
     .links {
         position: absolute;
     }
@@ -295,19 +304,19 @@ img {
     }
 
     .wrapper {
-        padding-top: 20%;
+        padding-top: 40%;
         width: 90%;
-        left: 5%;
+        display: inline;
     }
 
-    .total_cases {
-        width: 100%;
-    }
-
+    .total_cases,
     .card.active,
     .other_stats {
-        width: 100%;
+        width: 90vw;
+    }
 
+    .total_cases {  
+        display: inline;
     }
 
     .other_stats {
@@ -315,13 +324,18 @@ img {
     }
 
     .other_card {
-        width: 90%;
+        width: 100%;
         margin-top: 2px;
         padding-top: 5px;
     }
 
     .resources {
+        width: 90%;
         padding-left: 0%;
         padding-right: 0%;
+    }
+
+    .articles {
+        width: 100%;
     }
 }
