@@ -28,7 +28,7 @@
 }
 
 body {
-    padding-top: 7%;
+    padding-top: 6%;
     font-family: 'ibm-plex-mono';
     font-weight: 500;
     letter-spacing: 0.05em;
@@ -94,27 +94,35 @@ a {
 
 .wrapper {
     width: 90%;
-    margin-left: 10%;
+    margin-left: 5%;
+}
+
+.total_cases,
+.map {
+    width: 66%;
+}
+
+.other_stats,
+.other_resources {
+    width: 70%;
 }
 
 .total_cases {
-    width: 45%;
-    display: inline-block;
     margin-right: 0px;
     font-family: 'Tenon';
     font-weight: 400;
+    display: inline-block;
 }
 
 .other_stats {
-    width: 45%;
-    display: inline-block;
-    padding-left: 10%;
+    float: inherit;
 }
 
 .other_card {
+    position: relative;
     display: inline-block;
     border-radius: 10px;
-    width: 200px;
+    width: 275px;
     overflow: hidden;
     text-align: center;
     padding-left: 0px;
@@ -137,12 +145,11 @@ a {
 }
 
 .other_resources {
-    width: 90%;
     display: inline-block;
 }
 
 .total_cases p {
-    font-size: 2.5em;
+    font-size: 2.7em;
 }
 
 .other_stats p {
@@ -150,11 +157,14 @@ a {
 }
 
 .articles {
-    width: 90%;
+    width: 30%;
+    float: right;
+    margin-right: 0%;
+    margin-top: -2%;
 }
 
 .article {
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .articles h2 {
@@ -162,6 +172,7 @@ a {
 }
 
 .articles p {
+    margin-top: -4%;
     color: var(--articledesc-color);
 }
 
@@ -281,6 +292,10 @@ img {
 
 @media screen and (max-width:599px) {
 
+    .map {
+        display: none;
+    }
+
     body {
         padding-top: 20%;
         margin-left: 5%;
@@ -312,7 +327,7 @@ img {
         width: 90vw;
     }
 
-    .total_cases {  
+    .total_cases {
         display: inline;
     }
 
