@@ -330,7 +330,6 @@ img {
 
     .total_cases {
         display: inline;
-        padding-bottom: 20%;
     }
 
     .other_stats {
@@ -351,5 +350,9 @@ img {
 
     .articles {
         width: 100%;
+    }
+    
+    .articles p {
+       margin-top: 0%;
     }
 }
