@@ -17,27 +17,42 @@
 
 <body>
     <div class="wrapper">
-        
+
         <div class="total_cases">
             <p>There has now been a total of <span id="totalCases"></span> COVID-19 cases worldwide. </p>
         </div>
+
+        <div class="articles">
+
+            <p class="subhead">Live COVID-19 News:</p>
+
+            <a id="article" class="article"></a>
+        </div>
+
         <div class="other_stats">
             <div class="other_card">
                 <p>TOTAL RECOVERED</p><br>
-                <span id="totalRecovered"></span> 
+                <span id="totalRecovered"></span>
             </div>
-            <div class="other_card">
+            <!-- <div class="other_card">
                 <p>RECOVERY RATE</p><br>
                 <span id="recoveryRate"></span><span>%</span>
-            </div>
+            </div> -->
             <div class="other_card">
                 <p>TOTAL FATALITIES</p><br>
                 <span id="totalDeaths"></span>
             </div>
             <div class="other_card">
-                <p>FATALITY RATE</p><br>
+                <p>GLOBAL FATALITY RATE</p><br>
                 <span id="fatalityRate"></span><span>%</span>
             </div>
+        </div>
+
+        <br><br>
+
+        <div class="map">
+            <iframe src="https://www.arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c"
+                title="map" width="90%" height="500px"></iframe>
         </div>
 
         <div class="other_resources">
@@ -116,7 +131,7 @@
 
                         <div class="top-section">
                             <div class="circular-border">
-                                <i><img src="https://img.icons8.com/ios-filled/50/AD2831/usa-map.png" /></i>
+                                <i><img src="https://img.icons8.com/ios-filled/50/AD2831/rfid-signal.png" /></i>
                             </div>
                         </div>
                         <h2>US Covid Tracker</h2>
@@ -126,16 +141,170 @@
                     </div>
                 </a>
 
+                <a href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">
+                    <div class="card">
+                        <svg class="svg-background" viewBox="0 0 600 600">
+                            <path class="blob"
+                                d="M192.1,-148.2C230,-105.8,228.6,-27,204.4,33.7C180.2,94.3,133.3,136.8,77.7,165C22.1,193.1,-42.1,206.9,-94.5,185.7C-146.9,164.5,-187.5,108.3,-201.7,46C-215.9,-16.2,-203.7,-84.5,-165.7,-127C-127.7,-169.5,-63.8,-186.3,6.6,-191.6C77.1,-196.9,154.3,-190.7,192.1,-148.2Z">
+                            </path>
+                        </svg>
+
+                        <div class="top-section">
+                            <div class="circular-border">
+                                <i><img src="https://img.icons8.com/metro/50/AD2831/dashboard.png" /></i>
+                            </div>
+                        </div>
+                        <h2>CSSE Dashboard</h2>
+                        <h3>Dashboard by CSSE at John Hopkins University.</h3>
+
+                        <h3><a class="visit">Visit →</a></h3>
+                    </div>
+                </a>
+
+                <a href="https://www.who.int/health-cluster/news-and-events/news/COVID19-Resources/en/">
+                    <div class="card">
+                        <svg class="svg-background" viewBox="0 0 600 600">
+                            <path class="blob"
+                                d="M192.1,-148.2C230,-105.8,228.6,-27,204.4,33.7C180.2,94.3,133.3,136.8,77.7,165C22.1,193.1,-42.1,206.9,-94.5,185.7C-146.9,164.5,-187.5,108.3,-201.7,46C-215.9,-16.2,-203.7,-84.5,-165.7,-127C-127.7,-169.5,-63.8,-186.3,6.6,-191.6C77.1,-196.9,154.3,-190.7,192.1,-148.2Z">
+                            </path>
+                        </svg>
+
+                        <div class="top-section">
+                            <div class="circular-border">
+                                <i><img src="https://img.icons8.com/fluent-systems-regular/50/AD2831/globe.png" /></i>
+                            </div>
+                        </div>
+                        <h2>WHO Resources</h2>
+                        <h3>Resources and guidance provided by WHO.</h3>
+
+                        <h3><a class="visit">Visit →</a></h3>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/covid19/">
+                    <div class="card">
+                        <svg class="svg-background" viewBox="0 0 600 600">
+                            <path class="blob"
+                                d="M192.1,-148.2C230,-105.8,228.6,-27,204.4,33.7C180.2,94.3,133.3,136.8,77.7,165C22.1,193.1,-42.1,206.9,-94.5,185.7C-146.9,164.5,-187.5,108.3,-201.7,46C-215.9,-16.2,-203.7,-84.5,-165.7,-127C-127.7,-169.5,-63.8,-186.3,6.6,-191.6C77.1,-196.9,154.3,-190.7,192.1,-148.2Z">
+                            </path>
+                        </svg>
+
+                        <div class="top-section">
+                            <div class="circular-border">
+                                <i><img src="https://img.icons8.com/material-sharp/50/AD2831/google-logo.png" /></i>
+                            </div>
+                        </div>
+                        <h2>Google Health Information</h2>
+                        <h3>Google's COVID-19 Resources.</h3>
+
+                        <h3><a class="visit">Visit →</a></h3>
+                    </div>
+                </a>
+
+                <a href="https://www.usa.gov/coronavirus">
+                    <div class="card">
+                        <svg class="svg-background" viewBox="0 0 600 600">
+                            <path class="blob"
+                                d="M192.1,-148.2C230,-105.8,228.6,-27,204.4,33.7C180.2,94.3,133.3,136.8,77.7,165C22.1,193.1,-42.1,206.9,-94.5,185.7C-146.9,164.5,-187.5,108.3,-201.7,46C-215.9,-16.2,-203.7,-84.5,-165.7,-127C-127.7,-169.5,-63.8,-186.3,6.6,-191.6C77.1,-196.9,154.3,-190.7,192.1,-148.2Z">
+                            </path>
+                        </svg>
+
+                        <div class="top-section">
+                            <div class="circular-border">
+                                <i><img src="https://img.icons8.com/ios-filled/50/AD2831/usa-map.png" /></i>
+                            </div>
+                        </div>
+                        <h2>US Government Response</h2>
+                        <h3>US Government's COVID-19 Response.</h3>
+
+                        <h3><a class="visit">Visit →</a></h3>
+                    </div>
+                </a>
+
+                <a href="https://www.covid19treatmentguidelines.nih.gov/">
+                    <div class="card">
+                        <svg class="svg-background" viewBox="0 0 600 600">
+                            <path class="blob"
+                                d="M192.1,-148.2C230,-105.8,228.6,-27,204.4,33.7C180.2,94.3,133.3,136.8,77.7,165C22.1,193.1,-42.1,206.9,-94.5,185.7C-146.9,164.5,-187.5,108.3,-201.7,46C-215.9,-16.2,-203.7,-84.5,-165.7,-127C-127.7,-169.5,-63.8,-186.3,6.6,-191.6C77.1,-196.9,154.3,-190.7,192.1,-148.2Z">
+                            </path>
+                        </svg>
+
+                        <div class="top-section">
+                            <div class="circular-border">
+                                <i><img src="https://img.icons8.com/material-sharp/50/AD2831/like--v1.png" /></i>
+                            </div>
+                        </div>
+                        <h2>NIH Treatment Guidelines</h2>
+                        <h3>All COVID-19 guidelines by NIH.</h3>
+
+                        <h3><a class="visit">Visit →</a></h3>
+                    </div>
+                </a>
+
+                <a href="https://www.benefits.gov/help/faq/Coronavirus-resources">
+                    <div class="card">
+                        <svg class="svg-background" viewBox="0 0 600 600">
+                            <path class="blob"
+                                d="M192.1,-148.2C230,-105.8,228.6,-27,204.4,33.7C180.2,94.3,133.3,136.8,77.7,165C22.1,193.1,-42.1,206.9,-94.5,185.7C-146.9,164.5,-187.5,108.3,-201.7,46C-215.9,-16.2,-203.7,-84.5,-165.7,-127C-127.7,-169.5,-63.8,-186.3,6.6,-191.6C77.1,-196.9,154.3,-190.7,192.1,-148.2Z">
+                            </path>
+                        </svg>
+
+                        <div class="top-section">
+                            <div class="circular-border">
+                                <i><img src="https://img.icons8.com/ios-glyphs/50/AD2831/help.png" /></i>
+                            </div>
+                        </div>
+                        <h2>Coronavirus Help Center</h2>
+                        <h3>Help center by Benefits.gov.</h3>
+
+                        <h3><a class="visit">Visit →</a></h3>
+                    </div>
+                </a>
+
+                <a href="https://www.sba.gov/page/coronavirus-covid-19-small-business-guidance-loan-resources">
+                    <div class="card">
+                        <svg class="svg-background" viewBox="0 0 600 600">
+                            <path class="blob"
+                                d="M192.1,-148.2C230,-105.8,228.6,-27,204.4,33.7C180.2,94.3,133.3,136.8,77.7,165C22.1,193.1,-42.1,206.9,-94.5,185.7C-146.9,164.5,-187.5,108.3,-201.7,46C-215.9,-16.2,-203.7,-84.5,-165.7,-127C-127.7,-169.5,-63.8,-186.3,6.6,-191.6C77.1,-196.9,154.3,-190.7,192.1,-148.2Z">
+                            </path>
+                        </svg>
+
+                        <div class="top-section">
+                            <div class="circular-border">
+                                <i><img src="https://img.icons8.com/ios-glyphs/50/AD2831/us-dollar--v1.png" /></i>
+                            </div>
+                        </div>
+                        <h2>Small Business Guidance</h2>
+                        <h3>SBA.gov Loans & Resources.</h3>
+
+                        <h3><a class="visit">Visit →</a></h3>
+                    </div>
+                </a>
+
+                <a href="https://www.dol.gov/coronavirus">
+                    <div class="card">
+                        <svg class="svg-background" viewBox="0 0 600 600">
+                            <path class="blob"
+                                d="M192.1,-148.2C230,-105.8,228.6,-27,204.4,33.7C180.2,94.3,133.3,136.8,77.7,165C22.1,193.1,-42.1,206.9,-94.5,185.7C-146.9,164.5,-187.5,108.3,-201.7,46C-215.9,-16.2,-203.7,-84.5,-165.7,-127C-127.7,-169.5,-63.8,-186.3,6.6,-191.6C77.1,-196.9,154.3,-190.7,192.1,-148.2Z">
+                            </path>
+                        </svg>
+
+                        <div class="top-section">
+                            <div class="circular-border">
+                                <i><img src="https://img.icons8.com/material-rounded/50/AD2831/star--v1.png" /></i>
+                            </div>
+                        </div>
+                        <h2>DOL Resources</h2>
+                        <h3>Resources by the US Department of Labor.</h3>
+
+                        <h3><a class="visit">Visit →</a></h3>
+                    </div>
+                </a>
+
             </div>
 
-            <br>
-            <p class="subhead">Live COVID-19 News:</p>
-
         </div>
 
-        <div class="articles">
-            <a id="article" class="article"></a>
-        </div>
     </div>
 
     <script src='js/script.js'></script>
