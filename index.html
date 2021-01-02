@@ -17,13 +17,30 @@
 
 <body>
     <div class="wrapper">
-        <div class="total_case_box">
+        
+        <div class="total_cases">
             <p>There has now been a total of <span id="totalCases"></span> COVID-19 cases worldwide. </p>
-            <p>So far, <span id="totalRecovered"></span> people have recovered at a rate of <span
-                    id="recoveryRate"></span><span>%</span>,
-                while <span id="totalDeaths"></span> have died at a rate of <span
-                    id="fatalityRate"></span><span>%</span>.</p>
+        </div>
+        <div class="other_stats">
+            <div class="other_card">
+                <p>TOTAL RECOVERED</p><br>
+                <span id="totalRecovered"></span> 
+            </div>
+            <div class="other_card">
+                <p>RECOVERY RATE</p><br>
+                <span id="recoveryRate"></span><span>%</span>
+            </div>
+            <div class="other_card">
+                <p>TOTAL FATALITIES</p><br>
+                <span id="totalDeaths"></span>
+            </div>
+            <div class="other_card">
+                <p>FATALITY RATE</p><br>
+                <span id="fatalityRate"></span><span>%</span>
+            </div>
+        </div>
 
+        <div class="other_resources">
             <br>
             <p class="subhead">Other Resources:</p>
 
@@ -42,7 +59,7 @@
                             </div>
                         </div>
                         <h2>Covid Visualizer</h2>
-                        <h3>Interactive visualizer that highlights COVID-19 data.</h3>
+                        <h3>Interactive page that highlights COVID-19 data.</h3>
 
                         <h3><a class="visit">Visit →</a></h3>
                     </div>
@@ -83,11 +100,32 @@
                             </div>
                         </div>
                         <h2>Worldometers</h2>
-                        <h3>Detailed and specific live COVID-19 updates from Worldometers.</h3>
+                        <h3>Detailed live COVID-19 updates from Worldometers.</h3>
 
                         <h3><a class="visit">Visit →</a></h3>
                     </div>
                 </a>
+
+                <a href="https://covid.cdc.gov/covid-data-tracker/#cases_casesper100klast7days">
+                    <div class="card">
+                        <svg class="svg-background" viewBox="0 0 600 600">
+                            <path class="blob"
+                                d="M192.1,-148.2C230,-105.8,228.6,-27,204.4,33.7C180.2,94.3,133.3,136.8,77.7,165C22.1,193.1,-42.1,206.9,-94.5,185.7C-146.9,164.5,-187.5,108.3,-201.7,46C-215.9,-16.2,-203.7,-84.5,-165.7,-127C-127.7,-169.5,-63.8,-186.3,6.6,-191.6C77.1,-196.9,154.3,-190.7,192.1,-148.2Z">
+                            </path>
+                        </svg>
+
+                        <div class="top-section">
+                            <div class="circular-border">
+                                <i><img src="https://img.icons8.com/ios-filled/50/AD2831/coronavirus.png" /></i>
+                            </div>
+                        </div>
+                        <h2>US Covid Tracker</h2>
+                        <h3>Breakdown of COVID information by state.</h3>
+
+                        <h3><a class="visit">Visit →</a></h3>
+                    </div>
+                </a>
+
             </div>
 
             <br>
@@ -101,6 +139,7 @@
     </div>
 
     <script src='js/script.js'></script>
+    <script src='js/darkmode.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
 </body>
