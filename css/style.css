@@ -172,10 +172,6 @@ a {
     box-sizing: border-box;
 }
 
-.resources {
-    margin-top: -3%;
-}
-
 .card {
     position: relative;
     display: inline-block;
