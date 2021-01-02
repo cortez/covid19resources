@@ -41,6 +41,7 @@ body {
     top: 15px;
     font-weight: 600;
     color: var(--textHeader-color);
+    z-index: 2;
 }
 
 .head {
