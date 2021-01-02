@@ -19,7 +19,7 @@ fetch("https://coronavirus-19-api.herokuapp.com/all", {
 
         var recovery = (data.recovered / data.cases * 100).toFixed(2);
         var fatality = (data.deaths / data.cases * 100).toFixed(2);
-        recoveryRate.innerHTML = recovery;
+        // recoveryRate.innerHTML = recovery;
         fatalityRate.innerHTML = fatality;
 
         // console.log("Recovery rate: " + recoveryRate + "%" + "\nFatality Rate: " + fatalityRate + "%");
@@ -53,7 +53,7 @@ fetch("https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/search/NewsSe
             a.href = news.value[i].url;
             document.body.append(a);
 
-            story = story + "<a href='" + a + "'>" + "<h2>" + news.value[i].title + "</h2>" + "<p>" + news.value[i].description + "</p>" + "</a>";
+            story = story + "<a href='" + a + "'>" + "<h2>" + news.value[i].title + "</h2>" + "<p>" + news.value[i].description + "</p>" + "</a><br>";
         }
         document.getElementById('article').innerHTML = story;
 
