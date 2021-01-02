@@ -38,7 +38,7 @@ body {
 .links {
     position: fixed;
     left: 20px;
-    top: 20px;
+    top: 15px;
     font-weight: 600;
     color: var(--textHeader-color);
 }
